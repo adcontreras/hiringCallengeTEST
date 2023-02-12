@@ -1,36 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    color: rgb(247, 179, 32);
+}
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    font-weight:bold 
+}
+
+body{
+    background-color: rgb(255, 255, 255);   
+}
+
+#grid-container {
+    margin-left: 60px;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.grid-item{
+    width: 350px;
+    height: 200px;
+    margin: 0px;
+    object-fit: cover;
+    cursor: zoom-in;    
+}
+
+
+.grid-item:hover{
+    
+    transform: scale(1.2);
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
 }
 
 .card {

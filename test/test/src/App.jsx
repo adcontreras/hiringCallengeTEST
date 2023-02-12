@@ -6,16 +6,44 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Hello World!</h1>
+  <div className="App">
+      <h6 className='header'>[Making your life Easier]</h6>
+      <h1 className='title'>Discovering the World</h1>
+
+      <div className='container text-center'>
+          <div class="row align-items-start">
+            <div class="col">
+              All
+            </div>
+            <div class="col">
+              Travel
+            </div>
+            <div class="col">
+              Lifestyle
+            </div>
+            <div class="col">
+              Bussines
+            </div>
+            <div class="col">
+              Food
+            </div>
+            <div class="col">
+              Work
+            </div>
+          </div>
+        </div>
+          <div id="grid-container" class="img-gallery">
+        <img className='grid-item' src="https://images.unsplash.com/photo-1675799586880-65a51a088411?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NjE1NzgyMA&ixlib=rb-4.0.3&q=80&w=1080" alt="" srcset="" />
+        <img className='grid-item' src="https://images.unsplash.com/photo-1675210105711-b87c31d89bae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NjE1Nzk3NQ&ixlib=rb-4.0.3&q=80&w=1080" alt="" srcset="" />
+        <img className='grid-item' src="https://images.unsplash.com/photo-1675332911365-29a3265e8073?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NjE1ODAwMQ&ixlib=rb-4.0.3&q=80&w=1080" alt="" srcset="" />
+        <img className='grid-item' src="https://images.unsplash.com/photo-1675096293298-e529645322b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NjE1ODA3Mg&ixlib=rb-4.0.3&q=80&w=1080" alt="" srcset="" />
+        <img className='grid-item' src="https://images.unsplash.com/photo-1674017326482-2bc34041f123?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NjE1ODEwOA&ixlib=rb-4.0.3&q=80&w=1080" alt="" srcset="" />
+        <img className='grid-item' src="https://images.unsplash.com/photo-1673972249409-2c27a19205b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NjE1ODEyNQ&ixlib=rb-4.0.3&q=80&w=1080" alt="" srcset="" />
+        
+          </div>
+    
+
+
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
