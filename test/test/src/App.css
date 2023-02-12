@@ -32,13 +32,7 @@ body{
     height: 200px;
     margin: 0px;
     object-fit: cover;
-    cursor: zoom-in;    
-}
-
-
-.grid-item:hover{
-    
-    transform: scale(1.2);
+    cursor:pointer;
 }
 
 #root {
@@ -48,10 +42,16 @@ body{
   text-align: center;
 }
 
-.card {
-  padding: 2em;
+.col:hover{
+    transform: scale(1.2);
+    cursor:pointer;
 }
 
-.read-the-docs {
-  color: #888;
+.pencil{
+  background-color:rgb(247, 179, 32) ;
+  border-radius: 30%;
+  margin-top: 20px;
+  margin-left: 900px;
 }
+
+
